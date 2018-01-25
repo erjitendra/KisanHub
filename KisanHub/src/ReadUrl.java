@@ -15,6 +15,7 @@ public class ReadUrl {
 	static String Header="region_code,weather_param,year, key, value";
 	static String New_line_seprater="\n";
 	static WeatherModel urlWeatherModel=new WeatherModel();
+	static BufferedReader in;
 	
 	public static void main(String[] args) throws IOException {
 		
@@ -30,17 +31,10 @@ public class ReadUrl {
 					String dynamicUrl="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/"+weatherType[wp]+"/date/"+regionCode[rc]+".txt";
 				
 			URL url=new URL(dynamicUrl);
-			BufferedReader in = new BufferedReader(
+			 in = new BufferedReader(
 		    new InputStreamReader(url.openStream()));
 			
-			in.readLine();
-			in.readLine();
-			in.readLine();
-			in.readLine();
-			in.readLine();
-			in.readLine();
-			in.readLine();
-			in.readLine();
+			ignoreLines();
 			
 			
 			ArrayList<WeatherModel> weatherModels= new ArrayList<WeatherModel>();
@@ -80,6 +74,19 @@ public class ReadUrl {
 			e.printStackTrace();
 		}	
 	
+	}
+	
+	public static void ignoreLines() 
+	{
+	for(int i=0;i<8;i++) 
+	{
+		try {
+			in.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	}	
 	}
 	
 	public static void generateOutputFile(ArrayList<WeatherModel> weatherModels) {
