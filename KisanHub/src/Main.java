@@ -4,10 +4,10 @@ public class Main {
 	
 	public static void main(String[] args)  
 	{
-		UrlReader urlReader=new UrlReader();
-		ArrayList<WeatherModel> weatherModels = urlReader.readData();
+		Reader urlReader=new Reader();
+		ArrayList<WeatherModel> weatherModels = urlReader.read();
 		
-		Output output=new Output();
+		Writer output=new Writer();
 		output.runFileWriter(weatherModels);
 	
 	}
