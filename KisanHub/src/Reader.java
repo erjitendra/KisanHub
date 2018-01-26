@@ -5,11 +5,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class Reader {
+public class Reader 
+{
 	String regionCode[]= {"UK","England","Wales","Scotland"};
 	String weatherType[]= {"Tmax","Tmin","Tmean","Sunshine","Rainfall"};
 	ArrayList<WeatherModel> weatherModels= new ArrayList<WeatherModel>();
-	static BufferedReader in;
+	static BufferedReader bufferedReader;
 	
 	public ArrayList<WeatherModel> read()
 	{
@@ -26,10 +27,10 @@ public class Reader {
 			
 			try 
 			{
-				in = new BufferedReader(new InputStreamReader(url.openStream()));
+				bufferedReader = new BufferedReader(new InputStreamReader(url.openStream()));
 				ignoreLines();
 				readingData(rc, wp);
-				in.close();
+				bufferedReader.close();
 			}
 			
 			catch (IOException e) 
@@ -55,7 +56,7 @@ public class Reader {
 	private void readingData(int rc, int wp) throws IOException 
 	{
 		String inputLine;
-		while( (inputLine=in.readLine())!=null) 
+		while( (inputLine=bufferedReader.readLine())!=null) 
 		{
 			WeatherModel wm=new WeatherModel();
 			String valueTypes[]=inputLine.split(" +");
@@ -73,7 +74,7 @@ public class Reader {
 		  {
 		  try 
 		  {
-			in.readLine();
+			bufferedReader.readLine();
 		  } 
 		  catch (IOException e) 
 		  {
