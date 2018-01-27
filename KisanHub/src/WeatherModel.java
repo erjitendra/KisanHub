@@ -31,8 +31,8 @@ public class WeatherModel
 	public ArrayList<String> outputRows() 
 	{
 		ArrayList<String> outputRows=new ArrayList<String>();
-		String months[]= {"Jan","Feb", "March","Apr","May","June","July","Aug","Sep",
-				 "Oct","Nov","Dec","Win"};
+		String months[]= {"JAN","FEB", "MAR","APR","MAY","JUN","JUL","AUG","SEP",
+				 "OCT","NOV","DEC","WIN","SPR","SUM","AUT","ANN"};
 		
 		String internalRowValues[] = getRowValues();
 		

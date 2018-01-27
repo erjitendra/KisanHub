@@ -6,11 +6,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Reader 
 {
 	private String regionCode[]= {"UK","England","Wales","Scotland"};
-	private String weatherType[]= {"Tmax","Tmin","Tmean","Sunshine","Rainfall"};
+	private String weatherParameters[]= {"Tmax","Tmin","Tmean","Sunshine","Rainfall"};
+	private HashMap<String,String> parameterMap = weatherParameterMap();
 	private ArrayList<WeatherModel> weatherModels= new ArrayList<WeatherModel>();
 	private URL url;
 	private BufferedReader bufferedReader;
@@ -22,9 +24,9 @@ public class Reader
 		{
 			for(int rc=0;rc<regionCode.length;rc++) 	
 			{
-				for(int wp=0;wp<weatherType.length;wp++) 	
+				for(int wp=0;wp<weatherParameters.length;wp++) 	
 				{
-					String dynamicUrl="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/"+weatherType[wp]+"/date/"+regionCode[rc]+".txt";
+					String dynamicUrl="https://www.metoffice.gov.uk/pub/data/weather/uk/climate/datasets/"+weatherParameters[wp]+"/date/"+regionCode[rc]+".txt";
 					url=new URL(dynamicUrl);
 					
 					try 
@@ -69,7 +71,7 @@ public class Reader
 			WeatherModel wm=new WeatherModel();
 			String valueTypes[]=inputLine.split(" +");
 			wm.setRegionName(regionCode[rc]); 
-			wm.setWeatherParameter(weatherType[wp]);
+			wm.setWeatherParameter(parameterMap.get(weatherParameters[wp]));
 			wm.setRowValues(valueTypes);
 			weatherModels.add(wm);
 		 }
@@ -89,6 +91,17 @@ public class Reader
 					e.printStackTrace();
 			  }	
 		  }	
+	}
+	
+	public HashMap<String,String> weatherParameterMap()
+	{
+		HashMap<String,String> hashmap=new HashMap<String,String>();
+		hashmap.put("Tmax", "Max Temp");
+		hashmap.put("Tmin", "Min Temp");
+		hashmap.put("Tmean", "Mean Temp");
+		hashmap.put("Sunshine", "Sunshine");
+		hashmap.put("Rainfall", "Rainfall");
+		return hashmap;
 	}
 
 }
