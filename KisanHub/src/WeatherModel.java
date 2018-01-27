@@ -5,7 +5,7 @@ public class WeatherModel
 	private String regionName;
 	private String weatherParameter;
 	private String rowValues[];
-	static String new_line_seprater="\n";
+	private String new_line_seprater="\n";
 
 	public String[] getRowValues() {
 		return rowValues;
@@ -38,15 +38,15 @@ public class WeatherModel
 		
 		for(int i=0; i<months.length;i++) 
 		{
-		String fileRow;
-		String weatherValue=internalRowValues[i+1];
-		if(weatherValue.matches("---")) 
-		{
-			weatherValue="N/A";
-		}
-		fileRow= getRegionName()+","+getWeatherParameter()+","+
-		internalRowValues[0]+","+months[i]+","+weatherValue+new_line_seprater;
-		outputRows.add(fileRow);
+			String fileRow;
+			String weatherValue=internalRowValues[i+1];
+			if(weatherValue.matches("---")) 
+			{
+				weatherValue="N/A";
+			}
+			fileRow= getRegionName()+","+getWeatherParameter()+","+
+			internalRowValues[0]+","+months[i]+","+weatherValue+new_line_seprater;
+			outputRows.add(fileRow);
 		}
 		
 		return outputRows;

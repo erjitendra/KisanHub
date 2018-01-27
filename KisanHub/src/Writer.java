@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Writer 
 {
-	static FileWriter fileWriter;
-	static String header="region_code,weather_param,year, key, value";
-	static String new_line_seprater="\n";
+	private FileWriter fileWriter;
+	private String header="region_code,weather_param,year, key, value";
+	private String new_line_seprater="\n";
 	
 	public void runFileWriter(ArrayList<WeatherModel> weatherModels) 
 	{
@@ -15,7 +15,7 @@ public class Writer
 		endInWriting(); 
 	}
 	
-	public void fileCreate() 
+	private void fileCreate() 
 	{
 		try 
 		{
@@ -30,19 +30,19 @@ public class Writer
 		}
 	}
 	
-	public static void writeDataInFile(ArrayList<WeatherModel> weatherModels) 
+	private void writeDataInFile(ArrayList<WeatherModel> weatherModels) 
 	{
 	
 		try 
 		{
 			for(int i=0;i<weatherModels.size();i++) 
 			{
-			WeatherModel wm= weatherModels.get(i);
-			ArrayList<String> outputRows =wm.outputRows();
-			for(int j=0;j<outputRows.size();j++) 
-			{
-			fileWriter.append(outputRows.get(j));
-			}
+				WeatherModel wm= weatherModels.get(i);
+				ArrayList<String> outputRows =wm.outputRows();
+				for(int j=0;j<outputRows.size();j++) 
+				{
+					fileWriter.append(outputRows.get(j));
+				}
 			}
 		} 
 		
@@ -52,7 +52,7 @@ public class Writer
 		}
 	}
 	
-	public void endInWriting() 
+	private void endInWriting() 
 	{
 		try 
 		{
