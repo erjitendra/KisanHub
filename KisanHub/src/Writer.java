@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Writer 
 {
 	static FileWriter fileWriter;
-	static String Header="region_code,weather_param,year, key, value";
-	static String New_line_seprater="\n";
+	static String header="region_code,weather_param,year, key, value";
+	static String new_line_seprater="\n";
 	
 	public void runFileWriter(ArrayList<WeatherModel> weatherModels) 
 	{
@@ -20,8 +20,8 @@ public class Writer
 		try 
 		{
 			fileWriter=new FileWriter("weather.csv");
-			fileWriter.append(Header);
-			fileWriter.append(New_line_seprater);
+			fileWriter.append(header);
+			fileWriter.append(new_line_seprater);
 		}
 		
 		catch (IOException e) 

@@ -11,7 +11,7 @@ UK,Tmax,1910,Sep,15.6
 UK,Tmax,1910,Oct,12.8
 UK,Tmax,1910,Nov,5.9
 UK,Tmax,1910,Dec,7.7
-UK,Tmax,1910,Win,---
+UK,Tmax,1910,Win,N/A
 UK,Tmax,1911,Jan,5.9
 UK,Tmax,1911,Feb,6.8
 UK,Tmax,1911,March,7.2
@@ -1415,7 +1415,7 @@ UK,Tmin,1910,Sep,7.7
 UK,Tmin,1910,Oct,6.7
 UK,Tmin,1910,Nov,-0.3
 UK,Tmin,1910,Dec,3.1
-UK,Tmin,1910,Win,---
+UK,Tmin,1910,Win,N/A
 UK,Tmin,1911,Jan,0.9
 UK,Tmin,1911,Feb,0.9
 UK,Tmin,1911,March,1.2
@@ -2819,7 +2819,7 @@ UK,Tmean,1910,Sep,11.8
 UK,Tmean,1910,Oct,9.9
 UK,Tmean,1910,Nov,2.8
 UK,Tmean,1910,Dec,5.5
-UK,Tmean,1910,Win,---
+UK,Tmean,1910,Win,N/A
 UK,Tmean,1911,Jan,3.5
 UK,Tmean,1911,Feb,4.0
 UK,Tmean,1911,March,4.3
@@ -4223,7 +4223,7 @@ UK,Sunshine,1929,Sep,151.6
 UK,Sunshine,1929,Oct,98.9
 UK,Sunshine,1929,Nov,55.0
 UK,Sunshine,1929,Dec,49.3
-UK,Sunshine,1929,Win,---
+UK,Sunshine,1929,Win,N/A
 UK,Sunshine,1930,Jan,44.8
 UK,Sunshine,1930,Feb,68.4
 UK,Sunshine,1930,March,104.8
@@ -5380,7 +5380,7 @@ UK,Rainfall,1910,Sep,27.0
 UK,Rainfall,1910,Oct,89.4
 UK,Rainfall,1910,Nov,128.4
 UK,Rainfall,1910,Dec,142.2
-UK,Rainfall,1910,Win,---
+UK,Rainfall,1910,Win,N/A
 UK,Rainfall,1911,Jan,59.2
 UK,Rainfall,1911,Feb,99.7
 UK,Rainfall,1911,March,62.1
@@ -6784,7 +6784,7 @@ England,Tmax,1910,Sep,16.5
 England,Tmax,1910,Oct,13.7
 England,Tmax,1910,Nov,6.5
 England,Tmax,1910,Dec,8.3
-England,Tmax,1910,Win,---
+England,Tmax,1910,Win,N/A
 England,Tmax,1911,Jan,5.8
 England,Tmax,1911,Feb,7.3
 England,Tmax,1911,March,7.8
@@ -8188,7 +8188,7 @@ England,Tmin,1910,Sep,8.2
 England,Tmin,1910,Oct,7.5
 England,Tmin,1910,Nov,-0.2
 England,Tmin,1910,Dec,3.5
-England,Tmin,1910,Win,---
+England,Tmin,1910,Win,N/A
 England,Tmin,1911,Jan,0.7
 England,Tmin,1911,Feb,1.2
 England,Tmin,1911,March,1.7
@@ -9592,7 +9592,7 @@ England,Tmean,1910,Sep,12.4
 England,Tmean,1910,Oct,10.6
 England,Tmean,1910,Nov,3.2
 England,Tmean,1910,Dec,6.0
-England,Tmean,1910,Win,---
+England,Tmean,1910,Win,N/A
 England,Tmean,1911,Jan,3.4
 England,Tmean,1911,Feb,4.4
 England,Tmean,1911,March,4.8
@@ -10996,7 +10996,7 @@ England,Sunshine,1929,Sep,180.8
 England,Sunshine,1929,Oct,109.3
 England,Sunshine,1929,Nov,62.1
 England,Sunshine,1929,Dec,57.2
-England,Sunshine,1929,Win,---
+England,Sunshine,1929,Win,N/A
 England,Sunshine,1930,Jan,49.7
 England,Sunshine,1930,Feb,57.5
 England,Sunshine,1930,March,108.8
@@ -12153,7 +12153,7 @@ England,Rainfall,1910,Sep,15.7
 England,Rainfall,1910,Oct,86.7
 England,Rainfall,1910,Nov,109.9
 England,Rainfall,1910,Dec,124.6
-England,Rainfall,1910,Win,---
+England,Rainfall,1910,Win,N/A
 England,Rainfall,1911,Jan,38.4
 England,Rainfall,1911,Feb,57.6
 England,Rainfall,1911,March,55.8
@@ -13557,7 +13557,7 @@ Wales,Tmax,1910,Sep,15.6
 Wales,Tmax,1910,Oct,12.5
 Wales,Tmax,1910,Nov,6.9
 Wales,Tmax,1910,Dec,8.0
-Wales,Tmax,1910,Win,---
+Wales,Tmax,1910,Win,N/A
 Wales,Tmax,1911,Jan,5.8
 Wales,Tmax,1911,Feb,6.5
 Wales,Tmax,1911,March,7.5
@@ -14961,7 +14961,7 @@ Wales,Tmin,1910,Sep,8.2
 Wales,Tmin,1910,Oct,7.2
 Wales,Tmin,1910,Nov,1.2
 Wales,Tmin,1910,Dec,3.7
-Wales,Tmin,1910,Win,---
+Wales,Tmin,1910,Win,N/A
 Wales,Tmin,1911,Jan,1.4
 Wales,Tmin,1911,Feb,1.7
 Wales,Tmin,1911,March,1.8
@@ -16365,7 +16365,7 @@ Wales,Tmean,1910,Sep,12.2
 Wales,Tmean,1910,Oct,10.1
 Wales,Tmean,1910,Nov,4.2
 Wales,Tmean,1910,Dec,6.2
-Wales,Tmean,1910,Win,---
+Wales,Tmean,1910,Win,N/A
 Wales,Tmean,1911,Jan,4.0
 Wales,Tmean,1911,Feb,4.5
 Wales,Tmean,1911,March,4.7
@@ -17769,7 +17769,7 @@ Wales,Sunshine,1929,Sep,172.1
 Wales,Sunshine,1929,Oct,99.5
 Wales,Sunshine,1929,Nov,50.0
 Wales,Sunshine,1929,Dec,54.5
-Wales,Sunshine,1929,Win,---
+Wales,Sunshine,1929,Win,N/A
 Wales,Sunshine,1930,Jan,44.9
 Wales,Sunshine,1930,Feb,75.5
 Wales,Sunshine,1930,March,95.9
@@ -18926,7 +18926,7 @@ Wales,Rainfall,1910,Sep,13.5
 Wales,Rainfall,1910,Oct,130.3
 Wales,Rainfall,1910,Nov,192.3
 Wales,Rainfall,1910,Dec,227.7
-Wales,Rainfall,1910,Win,---
+Wales,Rainfall,1910,Win,N/A
 Wales,Rainfall,1911,Jan,55.3
 Wales,Rainfall,1911,Feb,111.9
 Wales,Rainfall,1911,March,74.3
@@ -20330,7 +20330,7 @@ Scotland,Tmax,1910,Sep,14.2
 Scotland,Tmax,1910,Oct,11.4
 Scotland,Tmax,1910,Nov,4.3
 Scotland,Tmax,1910,Dec,6.6
-Scotland,Tmax,1910,Win,---
+Scotland,Tmax,1910,Win,N/A
 Scotland,Tmax,1911,Jan,5.7
 Scotland,Tmax,1911,Feb,5.9
 Scotland,Tmax,1911,March,6.1
@@ -21734,7 +21734,7 @@ Scotland,Tmin,1910,Sep,6.8
 Scotland,Tmin,1910,Oct,5.3
 Scotland,Tmin,1910,Nov,-1.1
 Scotland,Tmin,1910,Dec,2.2
-Scotland,Tmin,1910,Win,---
+Scotland,Tmin,1910,Win,N/A
 Scotland,Tmin,1911,Jan,0.9
 Scotland,Tmin,1911,Feb,0.0
 Scotland,Tmin,1911,March,0.3
@@ -23138,7 +23138,7 @@ Scotland,Tmean,1910,Sep,10.7
 Scotland,Tmean,1910,Oct,8.5
 Scotland,Tmean,1910,Nov,1.6
 Scotland,Tmean,1910,Dec,4.4
-Scotland,Tmean,1910,Win,---
+Scotland,Tmean,1910,Win,N/A
 Scotland,Tmean,1911,Jan,3.5
 Scotland,Tmean,1911,Feb,3.1
 Scotland,Tmean,1911,March,3.2
@@ -24542,7 +24542,7 @@ Scotland,Sunshine,1929,Sep,102.3
 Scotland,Sunshine,1929,Oct,79.5
 Scotland,Sunshine,1929,Nov,46.1
 Scotland,Sunshine,1929,Dec,34.3
-Scotland,Sunshine,1929,Win,---
+Scotland,Sunshine,1929,Win,N/A
 Scotland,Sunshine,1930,Jan,37.6
 Scotland,Sunshine,1930,Feb,83.1
 Scotland,Sunshine,1930,March,102.5
@@ -25699,7 +25699,7 @@ Scotland,Rainfall,1910,Sep,48.5
 Scotland,Rainfall,1910,Oct,90.6
 Scotland,Rainfall,1910,Nov,147.9
 Scotland,Rainfall,1910,Dec,151.9
-Scotland,Rainfall,1910,Win,---
+Scotland,Rainfall,1910,Win,N/A
 Scotland,Rainfall,1911,Jan,96.2
 Scotland,Rainfall,1911,Feb,165.3
 Scotland,Rainfall,1911,March,73.1
